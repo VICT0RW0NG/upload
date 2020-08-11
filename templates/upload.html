@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title></title>
+    <script type="text/javascript">
+
+		function submitForm(form)
+		{
+			document.getElementById("submitTime").value = Date.now();
+			document.getElementById("uploadForm").submit();
+
+		}
+    </script>
+    </head>
+    <body>
+        <form id="uploadForm" action="/upload" enctype="multipart/form-data" method="post">
+            File: <input type="file" name="file"><br><br>
+			<input name="submitTime" id="submitTime" type="hidden" />
+            <input type="button" value="upload" onclick="submitForm()">
+        </form>
+    </body>
+</html>

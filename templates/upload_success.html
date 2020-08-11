@@ -1,0 +1,86 @@
+<html>
+	<head>
+	
+		<script type="text/javascript">
+			
+			
+			document.addEventListener("DOMContentLoaded", function(event) { 
+				
+				var checkDiffTime = document.getElementById("diffTime").innerHTML 
+				
+				const XHR = new XMLHttpRequest();
+	
+				let urlEncodedData = "",
+				      urlEncodedDataPairs = [],
+				      name;
+				
+				// Turn the data object into an array of URL-encoded key/value pairs.
+				 
+				var subTime = document.getElementById("subTime").getAttribute('value');
+				unixSubTimeStr = new Date(parseInt(subTime,10)).toString();
+				
+				document.getElementById("subTime").innerHTML = "Submit Time: " + unixSubTimeStr;
+				
+				var diffTime = Date.now() - subTime ;
+				
+				var fileName = document.getElementById("fileName").getAttribute('value');
+				
+				var fileSize = document.getElementById("fileSize").getAttribute('value');
+				
+				document.getElementById("diffTime").innerHTML = 'Diff Time:' + diffTime + " ms"; 
+				
+				urlEncodedDataPairs.push( encodeURIComponent("fileName") + '=' + encodeURIComponent(fileName) );
+				urlEncodedDataPairs.push( encodeURIComponent("subTime") + '=' + encodeURIComponent(unixSubTimeStr) );
+				urlEncodedDataPairs.push( encodeURIComponent("fileSize") + '=' + encodeURIComponent(fileSize) );
+				urlEncodedDataPairs.push( encodeURIComponent("binomialTook") + '=' + encodeURIComponent(diffTime) );
+				
+				// Combine the pairs into a single string and replace all %-encoded spaces to 
+				// the '+' character; matches the behaviour of browser form submissions.
+				urlEncodedData = urlEncodedDataPairs.join( '&' ).replace( /%20/g, '+' );
+				
+				// Define what happens on successful data submission
+				XHR.addEventListener( 'load', function(event) {
+				  console.log( 'Yeah! Data sent and response loaded.' );
+				} );
+				
+				// Define what happens in case of error
+				XHR.addEventListener( 'error', function(event) {
+				  console.log( 'Oops! Something went wrong.' );
+				} );
+				
+				// Set up our request
+				XHR.open( 'POST', '/saveResult' );
+				
+				// Add the required HTTP header for form data POST requests
+				XHR.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
+				
+				// Finally, send our data.
+				XHR.send( urlEncodedData );
+				
+				
+			});
+					
+			function submitForm(form)
+			{
+				document.getElementById("submitTime").value = Date.now();
+				document.getElementById("uploadForm").submit();
+	
+			}
+	    </script>
+	</head>
+    <body>
+        <form id="uploadForm" action="/upload" enctype="multipart/form-data" method="post">
+            File: <input type="file" name="file"><br><br>
+			<input name="submitTime" id="submitTime" type="hidden" />
+            <input type="button" value="upload" onclick="submitForm()">
+            
+            <div id="subTime" value="{{ .SubmitTime }}"></div>
+            <div id="fileName" value="{{ .Name }}">File Name: {{ .Name }}</div>
+            <div id="fileSize" value="{{ .FileSize }}">File Size: {{ .FileSize }}</div>
+            
+            <div id="diffTime" ></div>
+            
+        </form>
+    </body>
+</html>
+
