@@ -1,0 +1,15 @@
+{
+  "fields": [
+    {
+      "name": "productId",
+      "type": "string"
+    },
+    {
+      "name": "buCode",
+      "type": "string"
+    }
+  ],
+  "name": "EventDataKey",
+  "namespace": "com.aswatson.mdm.domain.aggregate.event.eventDataKey",
+  "type": "record"
+}

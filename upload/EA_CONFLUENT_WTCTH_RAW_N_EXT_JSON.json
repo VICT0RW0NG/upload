@@ -1,0 +1,62 @@
+{
+  "properties": {
+    "color": {
+      "description": "The color of the vehicle",
+      "type": "string"
+    },
+    "created_at": {
+      "description": "The date and time the vehicle was created",
+      "type": "string"
+    },
+    "id": {
+      "description": "The unique identifier for a vehicle",
+      "type": "string"
+    },
+    "location": {
+      "description": "The location of the vehicle",
+      "type": "string"
+    },
+    "make": {
+      "description": "The make of the vehicle",
+      "type": "string"
+    },
+    "mileage": {
+      "description": "The mileage of the vehicle",
+      "type": "integer"
+    },
+    "model": {
+      "description": "The model of the vehicle",
+      "type": "string"
+    },
+    "price": {
+      "description": "The price of the vehicle",
+      "type": "number"
+    },
+    "status": {
+      "description": "The status of the vehicle",
+      "type": "string"
+    },
+    "updated_at": {
+      "description": "The date and time the vehicle was last updated",
+      "type": "string"
+    },
+    "vin": {
+      "description": "The vehicle identification number",
+      "type": "string"
+    },
+    "year": {
+      "description": "The year the vehicle was manufactured",
+      "type": "integer"
+    },
+    "additonal_fueld": {
+      "description": "should failed since schema uses with backward compability type ",
+      "type": "string"
+    },
+    "additonal_fueld_2": {
+      "description": "should failed since schema uses with backward compability type ",
+      "type": "string"
+    }
+  },
+  "title": "Vehicle",
+  "type": "object"
+}

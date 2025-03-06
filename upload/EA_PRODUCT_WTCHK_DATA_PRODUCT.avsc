@@ -1,0 +1,253 @@
+{
+  "fields": [
+    {
+      "default": null,
+      "name": "aipPackType",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "baseProduct",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "baseProductDesc",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "buCode",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "catchWeightInd",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "created",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "dbLastUpdated",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "handlingSensitivity",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "lastUpdated",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "orderableInd",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "packProductInd",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "packageSize",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "packageUom",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "primaryCaseSize",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "productDescs",
+      "type": [
+        "null",
+        {
+          "items": {
+            "fields": [
+              {
+                "default": null,
+                "name": "code",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "value",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            ],
+            "name": "MultilingualVO",
+            "namespace": "com.aswatson.mdm.product.aggregate.product.json.product.aggregation",
+            "type": "record"
+          },
+          "java-class": "java.util.List",
+          "type": "array"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "productId",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "productPeriod",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "sellableInd",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "shortDescs",
+      "type": [
+        "null",
+        {
+          "items": "com.aswatson.mdm.product.aggregate.product.json.product.aggregation.MultilingualVO",
+          "java-class": "java.util.List",
+          "type": "array"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "standardUom",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "uomConvFactor",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "entityId",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "entityName",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "eventId",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "eventTime",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "eventType",
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ],
+  "name": "ProductKafkaVO",
+  "namespace": "com.aswatson.mdm.product.aggregate.product.json.product",
+  "type": "record"
+}

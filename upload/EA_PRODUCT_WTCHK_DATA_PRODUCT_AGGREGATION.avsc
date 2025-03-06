@@ -1,0 +1,961 @@
+{
+  "fields": [
+    {
+      "default": null,
+      "name": "aipPackType",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "baseProduct",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "baseProductDesc",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "buCode",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "catchWeightInd",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "created",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "dbLastUpdated",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "handlingSensitivity",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "images",
+      "type": [
+        "null",
+        {
+          "items": {
+            "fields": [
+              {
+                "default": null,
+                "name": "direction",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "format",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "imageCode",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "imageType",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "status",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "url",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            ],
+            "name": "ImageAggregationVO",
+            "type": "record"
+          },
+          "java-class": "java.util.List",
+          "type": "array"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "lastUpdated",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "linkedProducts",
+      "type": [
+        "null",
+        {
+          "items": {
+            "fields": [
+              {
+                "default": null,
+                "name": "linkedType",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "packNo",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "packQty",
+                "type": [
+                  "null",
+                  {
+                    "java-class": "java.math.BigDecimal",
+                    "type": "string"
+                  }
+                ]
+              },
+              {
+                "default": null,
+                "name": "packTmplId",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "productParentId",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "seqNo",
+                "type": [
+                  "null",
+                  "int"
+                ]
+              }
+            ],
+            "name": "LinkedProductAggregationVO",
+            "type": "record"
+          },
+          "java-class": "java.util.List",
+          "type": "array"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "orderableInd",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "packProductInd",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "packageSize",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "packageUom",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "primaryCaseSize",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "productAttribStandard",
+      "type": [
+        "null",
+        {
+          "fields": [
+            {
+              "default": null,
+              "name": "activeInd",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "ageRestriction",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "betterIngredient",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "betterPackaging",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "brand",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "brandCategory",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "brandId",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "cceProductInd",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "cleanBeauty",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "colorCode",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "colorDesc",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "colorGroup",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "colorHexCode",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "companyDel",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "consignFlag",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "deliveryRestrictions",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "fdProductInd",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "halal",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "issdd",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "labelType",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "latestTrends",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "lazada",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "manualPriceFlag",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "nonDiscFlag",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "nonRefundFlag",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "organic",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "otc",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "planogramFlag",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "postItemMessage",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "productClass",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "recallItem",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "refillPack",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "refundItemMessage",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "returnType",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "securityInd",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "sellByDateInd",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "shippingRegion",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "shopperType",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "sizeDesc",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "status",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "stopSaleInd",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "storeSaleQtyRestriction",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "variantColor",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "variantSize",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "volume",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "wasteFlag",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "weightedItem",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "default": null,
+              "name": "whConsignFlag",
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          ],
+          "name": "ProductAttribStandardAggregationVO",
+          "type": "record"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "productBarcodes",
+      "type": [
+        "null",
+        {
+          "items": {
+            "fields": [
+              {
+                "default": null,
+                "name": "barcode",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "barcodeFormat",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "barcodeType",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "endDate",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "primBarcodeInd",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "startDate",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "tradingUnitId",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            ],
+            "name": "ProductBarcodeAggregationVO",
+            "type": "record"
+          },
+          "java-class": "java.util.List",
+          "type": "array"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "productDescs",
+      "type": [
+        "null",
+        {
+          "items": {
+            "fields": [
+              {
+                "default": null,
+                "name": "code",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "value",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            ],
+            "name": "MultilingualVO",
+            "type": "record"
+          },
+          "java-class": "java.util.List",
+          "type": "array"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "productHierarchies",
+      "type": [
+        "null",
+        {
+          "items": {
+            "fields": [
+              {
+                "default": null,
+                "name": "hierarchyId",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "hierarchyType",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "hierarchyTypeDesc",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "level",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "subHierarchyType",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            ],
+            "name": "ProductHierarchyAggregationVO",
+            "type": "record"
+          },
+          "java-class": "java.util.List",
+          "type": "array"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "productId",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "productPeriod",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "productVats",
+      "type": [
+        "null",
+        {
+          "items": {
+            "fields": [
+              {
+                "default": null,
+                "name": "activeDate",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "vatCode",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "vatCodeDesc",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "vatRegion",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "default": null,
+                "name": "vatType",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            ],
+            "name": "ProductVatAggregationVO",
+            "type": "record"
+          },
+          "java-class": "java.util.List",
+          "type": "array"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "sellableInd",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "shortDescs",
+      "type": [
+        "null",
+        {
+          "items": "MultilingualVO",
+          "java-class": "java.util.List",
+          "type": "array"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "standardUom",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "uomConvFactor",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "entityId",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "entityName",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "eventId",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "eventTime",
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ],
+  "name": "ProductAggregationVO",
+  "namespace": "com.aswatson.mdm.product.aggregate.product.json.product.aggregation",
+  "type": "record"
+}

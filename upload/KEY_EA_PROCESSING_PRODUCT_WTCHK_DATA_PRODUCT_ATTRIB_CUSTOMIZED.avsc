@@ -1,0 +1,23 @@
+{
+  "fields": [
+    {
+      "name": "productAttribTypeId",
+      "type": "string"
+    },
+    {
+      "name": "productId",
+      "type": "string"
+    },
+    {
+      "name": "formulaCountryId",
+      "type": "string"
+    },
+    {
+      "name": "buCode",
+      "type": "string"
+    }
+  ],
+  "name": "EventDataKey",
+  "namespace": "com.aswatson.mdm.domain.aggregate.event.eventDataKey",
+  "type": "record"
+}
